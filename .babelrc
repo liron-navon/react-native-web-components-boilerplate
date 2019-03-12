@@ -1,0 +1,59 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "loose": true,
+        "modules": "commonjs",
+        "exclude": [
+          "transform-typeof-symbol"
+        ],
+        "targets": {
+          "browsers": [
+            "chrome 38",
+            "android 4",
+            "firefox 40",
+            "ios_saf 7",
+            "safari 7",
+            "ie 10",
+            "ie_mob 11",
+            "edge 12",
+            "opera 16",
+            "op_mini 12",
+            "and_uc 9",
+            "and_chr 38"
+          ]
+        }
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "transform-es2015-modules-commonjs",
+    "react-native-web",
+    "@babel/plugin-proposal-export-default-from",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "^react-native$": "react-native-web"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "react-native-web",
+        [
+          "module-resolver",
+          {
+            "alias": {
+              "^react-native$": "react-native-web"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "react-native-web-components-boilerplate",
+  "description": "A boilerplate for creating react-native-web component library with jest and storybook",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "dependencies": {
+    "eslint": "^5.15.1",
+    "prop-types": "^15.7.2",
+    "react-app-polyfill": "^0.2.2"
+  },
+  "scripts": {
+    "start": "npm run storybook",
+    "build": "cross-env NODE_ENV=production webpack",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "test": "jest",
+    "prepublish": "rm -rf ./dist && npm run build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/preset-env": "^7.3.4",
+    "@storybook/addon-actions": "^5.0.1",
+    "@storybook/addon-links": "^5.0.1",
+    "@storybook/addons": "^5.0.1",
+    "@storybook/react": "^5.0.1",
+    "@svgr/webpack": "^4.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^24.4.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-named-asset-import": "^0.3.1",
+    "babel-plugin-react-native-web": "^0.10.1",
+    "babel-preset-react-app": "^7.0.2",
+    "babel-preset-react-native": "^4.0.1",
+    "clean-webpack-plugin": "^2.0.0",
+    "cross-env": "^5.2.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "enzyme-to-json": "^3.3.5",
+    "jest": "^24.4.0",
+    "lodash": "^4.17.11",
+    "metro-react-native-babel-preset": "^0.53.0",
+    "react": "^16.8.4",
+    "react-art": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-native": "^0.58.6",
+    "react-native-web": "^0.10.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.5.1",
+    "react-art": ">=16.5.1",
+    "react-dom": ">=16.5.1",
+    "react-native": "*"
+  }
+}
