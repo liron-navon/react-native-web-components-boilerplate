@@ -13,7 +13,7 @@ Run storybook with HMR and auto update, use this to develop your components.
 
 ### `npm test`
 
-Runs tests with jest.
+Runs tests with jest (currently broken [react-native-web/issues/1284](https://github.com/necolas/react-native-web/issues/1284)).
 
 ### `npm run build`
 
