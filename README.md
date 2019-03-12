@@ -2,17 +2,6 @@
 
 This is a project for building component libraries with [react-native-web](https://github.com/necolas/react-native-web), its ready with storybook, jest, and exports a UMD library that you can import to your other projects.
 
-In order to keep the directory structure clean, you should follow this schema:
-
-```
-/src
-    index.js - the index file that exports all others
-    /lib
-        /<Component-Name>
-            <Component-Name>.jsx - the component
-            <Component-Name>.story.jsx - tests
-            <Component-Name>.test.jsx - documentation
-```
 
 ## Available Scripts
 
@@ -67,4 +56,19 @@ const MyComponent = () => {
         />
     )
 }
+```
+
+
+### Structure
+
+In order to keep the directory structure clean, you should follow this schema:
+
+```
+/src
+    index.js - the index file that exports all others
+    /lib
+        /<Component-Name>
+            <Component-Name>.jsx - the component
+            <Component-Name>.story.jsx - tests
+            <Component-Name>.test.jsx - documentation
 ```
