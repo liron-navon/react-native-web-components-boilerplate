@@ -1,9 +1,7 @@
-// export everything from this file as
-//
-// export MyComponent from './MyComponent';
-//
-// and import it as :
-//
-// import {MyComponent} from 'lib-name';
+import ActionTextInput from './lib/ActionTextInput/ActionTextInput';
+import Button from './lib/Button/Button';
 
-export ActionTextInput from './lib/ActionTextInput/ActionTextInput';
+export {
+    ActionTextInput,
+    Button
+}

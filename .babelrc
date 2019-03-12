@@ -31,7 +31,6 @@
   "plugins": [
     "transform-es2015-modules-commonjs",
     "react-native-web",
-    "@babel/plugin-proposal-export-default-from",
     [
       "module-resolver",
       {
