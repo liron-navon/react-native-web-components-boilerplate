@@ -6,4 +6,4 @@
 //
 // import {MyComponent} from 'lib-name';
 
-export ActionTextInput from './lib/TextInput/ActionTextInput';
+export ActionTextInput from './lib/ActionTextInput/ActionTextInput';
